@@ -1,0 +1,11 @@
+can_fly(peacock).
+can_fly(crow).
+can_fly(parrot).
+cannotfly(penguine).
+cannotfly(ostrich).
+fly(Bird):-
+    can_fly(Bird),
+    write(Bird),write('canfly!').
+unfly(Bird):-
+    cannotfly(Bird),
+    write(Bird),write('cannot fly!').
