@@ -1,0 +1,10 @@
+planet(mercury,rocky,36).
+planet(earth,rocky,1).
+planet(jupiter,gasgiant,582).
+planet(saturn,iceberg,752).
+rocky_planet(name,type,dist):-
+    planet(name,type,dist).
+gas_giant(name,type,dist):-
+    planet(name,type,dist).
+ice_berg(name,type,dist):-
+    planet(name,type,dist).
