@@ -1,0 +1,10 @@
+teaches(lisa,csa01).
+teaches(john,csa02).
+teaches(velumani,csa03).
+enrolls(nick,csa04).
+enrolls(pranay,csa04).
+enrolls(sanju,csa05).
+teacher(teacher,subcode):-
+    teaches(teacher,subcode).
+student(student,subcode):-
+    enrolls(student,subcode)
